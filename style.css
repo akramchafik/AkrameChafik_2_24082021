@@ -55,6 +55,7 @@ main
     display: flex;
  flex-direction: row;
  align-items: center;
+
 }
 .fa-map-marker-alt{
     background-color:#F2F2F2;
@@ -67,6 +68,9 @@ input
     padding: 20px;
     font-family: "Raleway";
     font-size: 20px;
+    font-weight: 700;
+    color: black;
+   
 }
 .rechercher
 {
@@ -75,10 +79,11 @@ input
     color: white;
     font-size: 20px;
     border-radius: 0 20px 20px 0;
+    cursor: pointer;
 }
 .filtres
 {
-    width: 75%;
+    width:65%;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -95,6 +100,10 @@ input
  border-color: #F2F2F2;
  border-radius:50px 50px 50px 50px;
 }
+.filtres-bg-icon:hover
+{
+    border-color: #0065FC;
+}
 .filtres-icon
 {
     position: absolute;
@@ -104,4 +113,25 @@ input
     border-radius: 50px;
     left: -5px;
     }
+    .fa-info
+    {
+        background-color: white;
+        border-radius: 50%;
+        border: 1px solid lightgray;
+        width: 35px;
+        height: 25px;
+        text-align: center;
+        color: #0065FC;
+        padding-top: 10px;
+    
+    }
+    .info-logements
+    {
+        width: 25%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
 
