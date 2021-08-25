@@ -11,6 +11,9 @@ flex-direction: row;
 justify-content: space-between;
 padding: 50px 50px;
 }
+#logo{
+    width: 150%;
+}
 .navigation
 {
 display: flex;
@@ -38,5 +41,38 @@ nav li a:hover
  color:#0065FC;
  border-top: 3px solid #0065FC;
  padding-top: 50px;
- 
+}
+main
+{
+   padding: 50px 50px;
+
+}
+.sous-titre
+{
+    font-size: x-large
+}
+.recherche{
+    display: flex;
+ flex-direction: row;
+ align-items: center;
+}
+.fa-map-marker-alt{
+    background-color:#F2F2F2;
+    padding: 26px 26px;
+    border-radius: 20px 0 0 20px;
+}
+input
+{
+    border-color: #F2F2F2 ;
+    padding: 20px;
+    font-family: "Raleway";
+    font-size: 20px;
+}
+.rechercher
+{
+    background-color:#0065FC ;
+    padding: 20px;
+    color: white;
+    font-size: 20px;
+    border-radius: 0 20px 20px 0;
 }
