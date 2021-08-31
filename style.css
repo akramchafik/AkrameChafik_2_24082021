@@ -6,29 +6,26 @@ body
 }
 header
 {
-  display: flex;
-flex-direction: row;
-justify-content: space-between;
-padding: 50px 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 50px 50px;
 }
-#logo{
-    width: 150%;
-}
+
 .navigation
 {
-display: flex;
-flex-direction: row;
-justify-content: space-between;
-width: 450px;
-list-style-type: none;
-
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 450px;
+    list-style-type: none;
 }
 nav a
 {
- text-decoration: none;
- font-weight: 500;
- color:black ;
- padding: 0 25px;
+    text-decoration: none;
+    font-weight: 500;
+    color:black ;
+    padding: 0 25px;
 }
 nav li:last-child a
 {
@@ -38,31 +35,36 @@ nav li:last-child a
 
 nav li a:hover
 {
- color:#0065FC;
- border-top: 3px solid #0065FC;
- padding-top: 50px;
+    color:#0065FC;
+    border-top: 3px solid #0065FC;
+    padding-top: 50px;
 }
 main
 {
    padding: 50px 50px;
 
 }
+
+section {
+    padding: 50px 50px;
+}
+
+/*section 1*/
 .sous-titre
 {
-    font-size: x-large
+    font-size: x-large;
 }
 .recherche{
     display: flex;
- flex-direction: row;
- align-items: center;
-
+    flex-direction: row;
+    align-items: center;
 }
 .fa-map-marker-alt{
     background-color:#F2F2F2;
     padding: 26px 26px;
     border-radius: 20px 0 0 20px;
 }
-input
+.recherche input
 {
     border-color: #F2F2F2 ;
     padding: 20px;
@@ -70,8 +72,8 @@ input
     font-size: 20px;
     font-weight: 700;
     color: black;
-   
 }
+
 .rechercher
 {
     background-color:#0065FC ;
@@ -88,17 +90,17 @@ input
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    margin: 80px;
+    margin: 80px 0;
     font-size: 20px;
     font-weight: bold;
 }
 .filtres-bg-icon
 {
     position: relative;
- border: 3px solid;
- padding: 0 26px 0 90px;
- border-color: #F2F2F2;
- border-radius:50px 50px 50px 50px;
+    border: 3px solid;
+    padding: 0 26px 0 90px;
+    border-color: #F2F2F2;
+    border-radius:50px 50px 50px 50px;
 }
 .filtres-bg-icon:hover
 {
@@ -112,26 +114,166 @@ input
     padding: 23px 23px;
     border-radius: 50px;
     left: -5px;
-    }
-    .fa-info
-    {
-        background-color: white;
-        border-radius: 50%;
-        border: 1px solid lightgray;
-        width: 35px;
-        height: 25px;
-        text-align: center;
-        color: #0065FC;
-        padding-top: 10px;
-    
-    }
-    .info-logements
-    {
-        width: 25%;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-    }
+}
+.fa-info
+{
+    background-color: white;
+    border-radius: 50%;
+    border: 1px solid lightgray;
+    width: 35px;
+    height: 25px;
+    text-align: center;
+    color: #0065FC;
+    padding-top: 10px;
+
+}
+.info-logements
+{
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+/*corps du site*/
+.section-deux {
+    display: flex;
+    flex-direction: row;
+}
+
+.hebergement
+{
+    flex: 2.6;
+background-color: #F2F2F2;
+border-radius: 20px 20px;
+}
+
+h3
+{
+padding: 30px 0 30px 30px; 
+}
+
+.cartes
+{
+display: flex;
+flex-flow: row wrap;
+justify-content: space-around;
+
+}
+
+
+a
+{
+color: black;
+text-decoration: none;
+}
+
+.carte_1
+{
+    width: 320px;
+    height: 320px;
+    background-color:white;
+    border-radius: 30px ;
+    border: 3px solid white;
+    box-shadow: 0 0 10px #ccc;
+    margin-bottom: 30px ;
+}
+
+figure
+{
+ height: 210px; 
+ margin: 0;
+
+}
+
+ figure img
+{
+     object-fit: cover;
+     width: 100%;
+     height: 100%;
+     border-radius: 30px 30px 0 0;
+}
+
+.info-hotel{
+    padding-left: 10px;
+}
+
+.nom
+{
+  
+    font-weight: bold;
+}
+.afficher
+{
+padding-left: 20px;
+padding-bottom: 50px;
+font-weight: bold;
+}
+
+/*aside*/
+
+aside {
+    flex: 1.4;
+    background-color: #F2F2F2;
+    margin-left: 20px;
+    border-radius: 30px;
+    padding-right: 30px;
+}
+
+.carte_aside
+{
+    display: flex;
+    flex-direction: row;
+    margin-left: 20px;
+    background-color:white;
+    border-radius: 30px ;
+    border: 3px solid white;
+    box-shadow: 0 0 10px #ccc;
+    margin-bottom: 60px;
+}
+.prix_aside
+{
+    padding-bottom: 50px;
+}
+.soleil
+{
+border-radius: 30px 0 0 30px;    
+}
+.titre_chart
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.fa-chart-line
+{
+    font-size: 32px;
+}
+.aside
+{
+    display: flex;
+    flex-direction: column;
+
+}
+.titre
+{
+    font-size: 32px;
+    font-weight: bolder;
+
+}
+.titre-margin
+{
+    margin-left: 20px;
+}
+.fa-star
+{
+    color:#0065FC ;
+}
+.grey-star
+{
+    color:#ccc
+}
 
 
