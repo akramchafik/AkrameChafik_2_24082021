@@ -16,6 +16,10 @@ header
     padding: 50px 50px 50px 35px;
 }
 
+.logo{
+    width: 10%;
+}
+
 .navigation
 {
     display: flex;
@@ -442,7 +446,7 @@ font-size: 15px;
     } 
     
     .logo {
-        width: 40%;
+        width: 30%;
         position: relative;
         padding-left: 20px;
     }
@@ -658,16 +662,31 @@ font-size: 15px;
 @media all and (min-width: 577px) and (max-width: 768px) 
 {
 
-   body
-   {
-     width: min-content;
-   }
 
    header
    {
        align-items: flex-end;
-       padding-right: 150px;
+       justify-content: start;
+       padding: 50px 20px;
+     
    }
+
+   .logo
+   {
+       width: 30%;
+
+   }
+
+   .navigation
+   {
+       width: 50px;
+   }
+
+   nav a {
+       padding: 0 15px;
+   }
+
+
 
    main { 
        padding-top: 0;
@@ -675,8 +694,8 @@ font-size: 15px;
 
    .filtres
    {
-       display: flex;
-       flex-flow: wrap;
+       display:grid;
+       margin-right: 80px;
        width: 100%;
        margin: 50px 0;
        
@@ -686,12 +705,6 @@ font-size: 15px;
        margin-bottom: 20px;
    }
 
-
-
-   .animaux
-   {
-       margin-left: 75px;
-   }
    .info-logements
    {
        width: 100%;
@@ -712,6 +725,24 @@ font-size: 15px;
        margin-top: 30px;
        background-color: white;
    }
+
+   aside{
+       margin-left: 0;
+   }
+
+   .img-coeur{
+       width: 63%;
+   }
+
+   .cartes-activites {
+       justify-content: center;
+   }
+
+   .titre-activites {
+       margin-left: 20px;
+   }
+
+
    .boites-footer
    {
        width: 100%;
@@ -720,3 +751,11 @@ font-size: 15px;
 
 
 }
+
+
+/*Tablette*/
+@media all and (min-width: 769px) and (max-width: 991px) 
+{
+    
+}
+
