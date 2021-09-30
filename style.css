@@ -608,37 +608,36 @@ font-size: 15px;
     padding: 0;
     }
     
-   aside {
-    border-radius: 0;
-    margin: 0;
-    padding: 0;
+    aside {
+        border-radius: 0;
+        margin: 0;
+        padding: 0;
     }
   
 
     #section-activites{
-     padding: 0 22px ;
+        padding: 0 22px ;
     }
-
 
     .titre-activites
     {
-     padding-top: 0;
-     padding-bottom: 0;
+        padding-top: 0;
+        padding-bottom: 0;
     }
 
     .cartes-activites {
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-   }
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+    }
 
    .carte_2{
-     width: 330px;
-     height: 250px;
+        width: 330px;
+        height: 250px;
     }
 
     .carte_2 figure{
-     height: 200px;
+        height: 200px;
     }
 
     .carte_3{
@@ -756,6 +755,65 @@ font-size: 15px;
 /*Tablette*/
 @media all and (min-width: 769px) and (max-width: 991px) 
 {
+    header
+    {
+        padding-bottom: 0;
+    }
+    main
+    {
+        padding-top: 0;
+    }
     
+    .filtres
+    {
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 30px 0;
+    }
+
+    #section-activites
+    {
+        display: flex;
+        padding: 20px;
+        margin: 10px;
+    }
+
+    aside
+    {
+        background-color: white;
+    }
+
+    .cartes-activites
+    {
+        justify-content: center;
+    }
+    .info-logements
+   {
+       width: 100%;
+       justify-content: start;
+   }
+
+   .fa-info
+   {
+       margin-right: 30px;
+   }
+   .section-deux
+   {
+       flex-direction: column;
+   }
+
+   .titre-activites
+   {
+       margin-left: 55px;
+       margin-top: 0;
+   }
+
+   .boites-footer
+   {
+       width: 100%;
+       padding-left: 0px;
+   }
+    
+
 }
 
