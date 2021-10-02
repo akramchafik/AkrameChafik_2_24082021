@@ -808,12 +808,135 @@ font-size: 15px;
        margin-top: 0;
    }
 
+   .carte_2{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+   .carte_3{
+       margin-left: 10px;
+       margin-right: 10px;
+   }
+
    .boites-footer
    {
        width: 100%;
        padding-left: 0px;
    }
     
+
+}
+
+
+/*Large devices*/
+@media all and (min-width: 992px) and (max-width: 1199px) 
+{
+    header
+    {
+        padding-bottom: 0;
+    }
+    main
+    {
+        padding-top: 0;
+    }
+
+    .filtres 
+    {
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 30px 0;
+    }
+    .info-logements
+   {
+       width: 100%;
+       justify-content: start;
+   }
+
+   .fa-info
+   {
+       margin-right: 30px;
+   }
+   .section-deux
+   {
+       flex-direction: column;
+   }
+
+   aside{
+       background-color: white;
+   }
+
+   .cartes-activites 
+    {
+    justify-content: space-around;
+    }
+
+    .carte_2{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    
+    .carte_3{
+           margin-left: 10px;
+           margin-right: 10px;
+    }
+}
+
+/*x large devices*/
+@media all and (min-width: 1200px) and (max-width: 1399px) {
+
+    .filtres {
+        width: 100%;
+    }
+
+    .info-logements
+    {
+        width: 100%;
+        justify-content: start;
+    }
+ 
+    .fa-info
+    {
+        margin-right: 30px;
+    }
+
+    .cartes-activites 
+    {
+    justify-content: space-around;
+    }
+
+
+    .carte_2{
+        margin-left: 20px;
+        margin-right: 20px;
+        width: 450px;
+    }
+    
+    .carte_3{
+           margin-left: 20px;
+           margin-right: 20px;
+           width: 450px;
+    }
+
+}
+
+/*xx large devices*/
+@media all and (min-width: 1400px) and (max-width: 1699px) {
+
+    .filtres {
+        width: 85%;
+    }
+
+    .carte_2 {
+        width: 310px;
+    }
+
+    .carte_3 {
+        width: 310px;
+    }
+
+    h2 {
+        font-size: 21px;
+    }
 
 }
 
